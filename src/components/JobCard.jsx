@@ -33,10 +33,9 @@ const JobCard = ({ company, title, location, salary, type, ago }) => {
         
       </div>
 
-      <ul className="text-xs text-gray-500 mb-4 list-disc list-inside">
-        <li>A user-friendly interface lets you browse stunning photos and videos</li>
-        <li>Filter destinations based on interests and travel style, and create personalized</li>
-      </ul>
+      <div className="text-xs text-gray-500 mb-4 list-disc list-inside">
+        <span> {description || 'N/A'}</span>
+      </div>
 
       <button className="mt-auto bg-blue-500 text-white text-sm font-semibold py-2 rounded">
         Apply Now
