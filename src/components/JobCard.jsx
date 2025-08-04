@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JobCard = ({ company, title, location, salary, type, ago }) => {
+const JobCard = ({ company, title, location, salary, type, ago, description }) => {
   const companyName = company || 'Unknown Company';
 
   return (
