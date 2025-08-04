@@ -90,6 +90,7 @@ const App = () => {
       location={job.location}
       salary={job.salaryRange}
       type={job.jobType}
+      jobDescription={job.jobDescription}
       ago="Just now"
     />
   ))}
