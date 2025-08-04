@@ -66,8 +66,12 @@ const JobCreationForm = ({ onClose, onJobCreated }) => {
             <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
             <select className="filter-input border border-gray-300 rounded px-2 py-1 w-full" {...register("location")}>
               <option value="">Choose Preferred Location</option>
-              <option value="Onsite">Onsite</option>
-              <option value="Remote">Remote</option>
+              <option value="Onsite">Bengaluru</option>
+              <option value="Remote">Chennai</option>
+              <option value="Remote">Hyderabad</option>
+              <option value="Remote">Mumbai</option>
+              <option value="Remote">Pune</option>
+
             </select>
           </div>
           <div className="w-1/2">
