@@ -14,7 +14,7 @@ const App = () => {
 
   const fetchJobs = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/jobs');
+      const response = await axios.get('https://attractive-nourishment-production-8eb9.up.railway.app/api/jobs');
       setJobs(response.data);
     } catch (error) {
       console.error('Error fetching jobs:', error);
@@ -32,7 +32,7 @@ const App = () => {
       if (values.salary) queryParams.append('salaryRange', values.salary);
 
       axios
-        .get(`http://localhost:8080/api/jobs/filter?${queryParams.toString()}`)
+        .get(`https://attractive-nourishment-production-8eb9.up.railway.app/api/jobs/filter?${queryParams.toString()}`)
         .then((res) => setJobs(res.data))
         .catch((err) => console.error('Filtering error:', err));
     });
@@ -58,7 +58,7 @@ const App = () => {
         applicationDeadline: data.deadline,
       };
 
-      await axios.post('http://localhost:8080/api/jobs', jobPayload);
+      await axios.post('https://attractive-nourishment-production-8eb9.up.railway.app/api/jobs', jobPayload);
       fetchJobs();
       setShowJobCreation(false);
     } catch (error) {

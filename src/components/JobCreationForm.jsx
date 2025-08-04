@@ -19,7 +19,7 @@ const JobCreationForm = ({ onClose, onJobCreated }) => {
         applicationDeadline: data.deadline,
       };
 
-      await axios.post('http://localhost:8080/api/jobs', jobPayload);
+      await axios.post('https://attractive-nourishment-production-8eb9.up.railway.app/api/jobs', jobPayload);
 
       reset();
       onClose();
