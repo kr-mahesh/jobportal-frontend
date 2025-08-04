@@ -34,7 +34,7 @@ const JobCard = ({ company, title, location, salary, type, ago }) => {
       </div>
 
       <ul className="text-xs text-gray-500 mb-4 list-disc list-inside">
-       <li><span> {description || 'N/A'}</span></li> 
+       <li> {jobDescription || 'No description provided.'}</li> 
       </ul>
 
       <button className="mt-auto bg-blue-500 text-white text-sm font-semibold py-2 rounded">
